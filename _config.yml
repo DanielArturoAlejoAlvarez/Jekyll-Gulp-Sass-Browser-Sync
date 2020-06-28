@@ -1,0 +1,4 @@
+name: Daniel Alejo Alvarez
+email: yourmediasoft@gmail.com
+markdown: redcarpet
+exclude: ["node_modules","gulpfile.js","package.json"]

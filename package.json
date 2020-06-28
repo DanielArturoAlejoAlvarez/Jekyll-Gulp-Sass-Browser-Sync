@@ -1,0 +1,24 @@
+{
+  "name": "jekyll-gulp-sass-browser-sync-2",
+  "version": "1.0.0",
+  "description": "Software of Development with Jekyll,Gulp,Sass,BrowserSync,etc",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browserSync"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^4.1.0"
+  }
+}
