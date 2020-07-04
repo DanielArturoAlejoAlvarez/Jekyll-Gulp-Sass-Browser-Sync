@@ -29,9 +29,5 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "vinyl-source-stream": "^2.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DanielArturoAlejoAlvarez/Jekyll-Gulp-Sass-Browser-Sync.git"
-  },
+  }
 }
