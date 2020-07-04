@@ -1,0 +1,50 @@
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+  @media(max-width: 775px)
+    display: block
+
+.home-sections
+  flex: 1
+
+  section
+    padding: 50px 0
+
+  .flex
+    display: flex
+    flex-direction: row
+
+  .flex--center
+    justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
+
+.col-1
+  max-width: 300px
+  margin: 0 10px
+  background: $yellow
+
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  background: $green
+
+.col-50
+  width: 50%
+  background: $blue
+
+@media(max-width: 640px)
+  .home-sections .flex
+    display: block
+
+  .col-1
+    max-width: 100%
+
+  .col-50
+    width: auto

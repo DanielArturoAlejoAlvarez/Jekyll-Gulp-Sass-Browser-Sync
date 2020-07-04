@@ -1,0 +1,156 @@
+.home-wrap
+  header
+    width: 135px
+    background: white
+    padding: 30px 0
+
+    .header-position
+      position: fixed
+      top: 30px
+      left: 0
+      bottom: 30px
+      width: 135px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    a
+      color: #999
+
+      &:hover, &:active
+        color: #666
+
+    .logo
+      +hide-text
+      max-width: 135px
+      background:
+        image: url(/assets/img/logo-tn.svg)
+        position: center
+        size: contain
+        repeat: no-repeat
+        //color: pink
+      height: 80px
+      margin: 0
+      padding: 0
+
+
+    .site-nav
+      ul
+        list-style: none
+        margin: 20px 0
+        padding: 0 20px 0 0
+        text-align: right
+
+        li
+          margin-bottom: 10px
+          &:last-child
+            margin-bottom: 0
+
+    .mail-link
+      display: block
+      text-align: right
+      padding-right: 20px
+
+    .mobile-nav-toggle
+      display: none
+      width: 50px
+      height: 50px
+      margin-right: 20px
+      //background: pink
+      align-items: center
+      cursor: pointer
+
+      &:selection
+        background: transparent
+
+      &:-moz-selection
+        background: transparent
+
+      span:after,
+      span:before,
+      span
+        content: ""
+        display: block
+        height: 2px
+        background: #333
+        width: 100%
+        position: relative
+        transition: all .3s ease-in-out
+
+      span:before
+        top: 15px
+
+      span:after
+        top: -17px
+
+      &.is-open span
+        background: transparent
+
+      &.is-open span:before,
+      &.is-open span:after
+        transform-origin: center
+        transform: rotate(45deg)
+        top: 0
+
+      &.is-open span:before
+        transform: rotate(-45deg)
+
+  .mobile-nav
+    opacity: 0
+    position: absolute
+    width: 100%
+    background: white
+    padding: 30px 0 20px
+    transition: all .5s cubic-bezier(.25,.35,0,1.74)
+    transform: translateY(-100px)
+
+    a
+      text-transform: uppercase
+      color: #999
+
+      &:hover, &:active
+        color: #666
+
+    ul
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        text-align: center
+        margin-bottom: 20px
+
+
+@media(max-width: 775px)
+  .home-wrap
+    header
+      height: auto
+      width: auto
+      padding: 30px 0
+
+      .header-position
+        width: auto
+        position: relative
+        top: auto
+        left: auto
+        bottom: auto
+        flex-direction: row
+        align-items: center
+
+
+        .site-nav,
+        .mail-link
+          display: none
+
+        .logo
+          position: absolute
+          width: 65px
+
+        .mobile-nav-toggle
+          right: 20px
+          position: absolute
+          display: flex
+
+    .mobile-nav.is-open
+      opacity: 1
+      transform: translateY(0px)

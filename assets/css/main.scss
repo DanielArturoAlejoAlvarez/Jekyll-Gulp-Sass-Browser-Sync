@@ -4,9 +4,13 @@
 
 @import "fonts/fonts";
 
+@import "1-base/vars";
+@import "1-base/base";
+
+@import "2-modules/buttons";
+@import "2-modules/video";
 
 
-body {
-  background: #F2F2F2;
-  font-family: 'Fira Sans';
-}
+@import "3-sections/header";
+
+@import "4-layouts/home";

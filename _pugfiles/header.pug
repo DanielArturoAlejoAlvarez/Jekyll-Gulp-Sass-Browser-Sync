@@ -1,0 +1,23 @@
+mixin nav-content()
+    ul
+        li: a(href="about") About
+        li: a(href="youtube") YouTube
+        li: a(href="mentoring") Mentoring
+        li: a(href="articles") Articles
+        li: a(href="vine") Vine
+        li: a(href="design") Desing
+        li: a(href="notes") Notes
+        li: a(href="contact") Contact
+
+.mobile-nav
+    +nav-content()
+
+header
+    .header-position
+        h1.logo NewCo
+        nav.site-nav
+            +nav-content
+                
+        a(href="mailto:newco@gmail.com").mail-link +email me
+        
+        .mobile-nav-toggle: span
